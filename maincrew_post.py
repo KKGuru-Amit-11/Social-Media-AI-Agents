@@ -116,7 +116,7 @@ if st.button("Generate"):
     with st.spinner("Generate Response..."):
         res=crew.kickoff(inputs=inputs)
         result=str(res)
-        st.subheader("Here is a Response..")
+        st.info("Here is a Response..")
         st.markdown(res)
         st.download_button(label='Download Text File',
                            file_name=f'{post_content} post.txt',data=result)
